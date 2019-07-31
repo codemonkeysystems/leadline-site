@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Boilerstrap</title>
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="" />
+
+    <!-- Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    /> -->
+
+    <script src="https://kit.fontawesome.com/11f24bf22a.js"></script>
+
+    <style>
+      body {
+        /* background-color: lightgray; */
+        border-top: 10px solid #4d8cff;
+      }
+      .iphone {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      a {
+        text-decoration: underline;
+        color: #4d8cff;
+      }
+
+      .content {
+        border-bottom: 1px solid rgba(91, 112, 139, 0.2);
+        padding-top: 50px;
+        /* padding-bottom: 50px; */
+      }
+
+      h1 {
+        font-size: 64px;
+        line-height: 64px;
+        color: #020814;
+        letter-spacing: -0.04em;
+        margin-bottom: 25px;
+        /* margin-top: 30px; */
+      }
+      p {
+        font-size: 22px;
+        line-height: 37px;
+        color: rgba(91, 112, 139, 0.9);
+        letter-spacing: -0.04em;
+        font-family: Inter, 'Inter UI', Helvetica, Arial, sans-serif;
+      }
+
+      @media all and (max-width: 736px) {
+        h1 {
+          color: #4d8cff;
+        }
+      }
+
+      .modal-content {
+        border-radius: 0;
+        border: none;
+        border-top: 10px solid #4d8cff;
+      }
+
+      #cf img {
+        animation-name: cf3FadeInOut;
+        animation-timing-function: ease-in-out;
+        /* if you only want to cycle a finite amount of times, 
+   simply change 'infinite' with # of iterations you need */
+        animation-iteration-count: infinite;
+        animation-duration: 9s;
+        /* animation-direction: alternate; not strictly necessary */
+        position: absolute;
+      }
+
+      #cf img:nth-of-type(1) {
+        animation-delay: 9s;
+      }
+
+      #cf img:nth-of-type(2) {
+        animation-delay: 6s;
+      }
+
+      #cf img:nth-of-type(3) {
+        /* add some delay for the first picture as well */
+        animation-delay: 3s;
+      }
+
+      @keyframes cf3FadeInOut {
+        /* distributing times evenly */
+        0% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center" style="margin-bottom: 50px">
+              <span
+                style="background-color: #4d8cff; color: white; padding: 6px; border-radius: 3px; "
+                >Lead<span style="font-weight: bold">Line</span></span
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" style="margin-bottom: 66px">
+            <h1>
+              Business tools that don't suck.
+            </h1>
+
+            <p>
+              At LeadLine, we build custom web & mobile apps that help tens of
+              thousands of people generate more sales, train more team members,
+              and focus more on their business.
+            </p>
+            <p>
+              Want a system?
+              <a href="" data-toggle="modal" data-target="#exampleModal"
+                >Contact Joel.</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <!-- <img  src="iphone.png" /> -->
+
+            <!-- <div id="cf4a">
+              <img class="img-fluid iphone" src="fade_1.png" />
+              <img class="img-fluid iphone" src="fade_2.png" />
+              <img class="img-fluid iphone" src="fade_3.png" />
+            </div> -->
+
+            <div style="position: relative;" class="iphone">
+              <div id="cf">
+                <img class="img-fluid bottom" src="img/fade_1.png" />
+                <img class="img-fluid  top" src="img/fade_2.png" />
+                <img class="img-fluid  bottom" src="img/fade_3.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" style="padding-bottom: 30px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center" style="margin-bottom: 50px">
+              <span
+                style="background-color: #4d8cff; color: white; padding: 6px; border-radius: 3px; "
+                >Our <span style="font-weight: bold">Systems</span></span
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-md-12">
+            <p>
+              We build custom web & mobile app systems that help you generate
+              more sales, train more team members, and focus more of your
+              business.
+            </p>
+          </div>
+        </div> -->
+
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              class="img-fluid"
+              style="padding: 30px; margin-top: -30px; padding-bottom: 0"
+              src="https://joeyscarim.com/assets/leadowl.png"
+            />
+            <p
+              style="text-align: center; margin-top: 10; font-size: 16px; padding: 0"
+            >
+              LeadOwl
+            </p>
+            <p style="font-size: 16px; line-height: 24px; margin-bottom: 5px">
+              Mobile-first CRM designed with agencies and Facebook Lead Ad
+              integrations in mind.
+            </p>
+            <a href="">Check it out</a>
+          </div>
+          <div class="col-md-3">
+            <img
+              class="img-fluid"
+              style="padding: 30px; margin-top: -30px; padding-bottom: 0"
+              src="https://joeyscarim.com/assets/osp.png"
+            />
+            <p
+              style="text-align: center; margin-top: 10; font-size: 16px; padding: 0"
+            >
+              Business Glu
+            </p>
+            <p style="font-size: 16px; line-height: 24px; margin-bottom: 5px">
+              All-in-one CRM, lead generation, and learning system.
+            </p>
+            <a href="">Check it out</a>
+          </div>
+          <div class="col-md-3">
+            <img
+              class="img-fluid"
+              style="padding: 30px; margin-top: -30px; padding-bottom: 0"
+              src="https://joeyscarim.com/assets/run.png"
+            />
+            <p
+              style="text-align: center; margin-top: 10; font-size: 16px; padding: 0"
+            >
+              Business Glu
+            </p>
+            <p style="font-size: 16px; line-height: 24px; margin-bottom: 5px">
+              All-in-one CRM, lead generation, and learning system.
+            </p>
+            <a href="">Check it out</a>
+          </div>
+          <div class="col-md-3">
+            <img
+              class="img-fluid"
+              style="padding: 30px; margin-top: -30px; padding-bottom: 0"
+              src="https://joeyscarim.com/assets/leadowl.png"
+            />
+            <p
+              style="text-align: center; margin-top: 10; font-size: 16px; padding: 0"
+            >
+              Custom Systems
+            </p>
+            <p style="font-size: 16px; line-height: 24px; margin-bottom: 5px">
+              All-in-one CRM, lead generation, and learning system.
+            </p>
+            <a href="">Check it out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" style="padding-bottom: 30px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center" style="margin-bottom: 50px">
+              <span
+                style="background-color: #4d8cff; color: white; padding: 6px; border-radius: 3px; "
+                >Our <span style="font-weight: bold">Services</span></span
+              >
+
+              <!-- take this from the Why build with Ionic? section of ionicframework.com -->
+              <!-- 3 sections -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex">
+      <div style="flex: 1">
+        <img src="img/map4.png" class="img-fluid" />
+      </div>
+
+      <div style="flex: 1; padding: 50px">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center" style="margin-bottom: 50px">
+                <span
+                  style="background-color: #4d8cff; color: white; padding: 6px; border-radius: 3px; "
+                  >Our <span style="font-weight: bold">Team</span></span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                LeadLine is headquartered in Tucson, Arizona and has remote team
+                members across the U.S.
+              </p>
+
+              <p>
+                Besides hard workers, our team consists of
+                <a
+                  href=""
+                  rel="popover"
+                  data-name="Earl, CTO"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >dog lovers</a
+                >,
+                <a
+                  href=""
+                  rel="popover"
+                  data-name="Kitty, Project Manager"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >plant enthusiasts</a
+                >,
+                <a
+                  href=""
+                  rel="popover"
+                  data-name="Zach, Full-stack Developer"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >fantasy football belt winners</a
+                >,
+                <a
+                  href=""
+                  rel="popover"
+                  data-name="Mitchell, Support specialist"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >trash talkers</a
+                >,
+                <a
+                  href=""
+                  rel="popover"
+                  data-name="Joey, Mobile app developer"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >bike commuters</a
+                >,
+                <a
+                  href=""
+                  rel="popover"
+                  data-name=", Mobile app developer"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >marathon runners</a
+                >,
+                <a
+                  href=""
+                  rel="popover"
+                  data-name="Kevin, Mobile app developer"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >snowboard junkies</a
+                >,
+                <a
+                  href=""
+                  rel="popover"
+                  data-name="Jodie, Mobile app developer"
+                  data-img="https://onlinesalespro.com/corporate/images/headshots/earl.png"
+                  >future white-coats</a
+                >, and <a href="">Joel</a>- he's hard to describe.
+
+                <!-- phytomaniacas: I didnt know when it means either, its just a fancy word for plant lovers -->
+                <!-- marathon runners: alright, fine. I lied about this one. But were all trying to workout more. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" style="background: #4d8cff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span style="color: #FFF"
+              >LeadLine, LLC. 2019. All Rights Reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Joel</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Popper -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap 4 -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Add custom JS here
+      $('a[rel=popover]').popover({
+        html: true,
+        trigger: 'hover',
+        placement: 'top',
+        content: function() {
+          return (
+            '<img style="width: 150px; height: 150px" src="' +
+            $(this).data('img') +
+            '" /> <p style="font-size: 16px; text-align: center">' +
+            $(this).data('name') +
+            '</p>'
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
